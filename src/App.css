@@ -1,0 +1,29 @@
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    padding: 0;
+}
+
+.Content {
+    padding-bottom: 80px;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 70px;
+    overflow: auto;
+    border-top: 1px solid #555;
+}
+.Col {
+    text-align: center;
+}
+
+.Selected {
+    background-color: cyan;
+}
