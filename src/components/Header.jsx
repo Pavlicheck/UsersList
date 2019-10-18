@@ -12,7 +12,11 @@ const Header = ({ selectAll, allSelected }) => {
     <Layout.Header className="Header" theme="light">
       <Row selected={allSelected}>
         <Cell>
-          <Checkbox onChange={clickHandler} checked={allSelected} />
+          <Checkbox
+            onChange={clickHandler}
+            checked={allSelected}
+          />
+
         </Cell>
         <Cell>Name</Cell>
         <Cell>Last name</Cell>

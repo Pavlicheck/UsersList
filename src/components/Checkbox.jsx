@@ -1,13 +1,17 @@
-import React from "react";
+import React, {memo} from "react";
 import { Checkbox as AntCheckbox } from "antd";
 
-const Checkbox = ({ clickHandler, checked }) => {
+const Checkbox = ({ selectUser, userId, checked }) => {
+  const clickHandler = () => {
+    selectUser({id: userId, selected: !checked})
+  };
+
   return (
     <AntCheckbox
       checked={checked}
-      onClick={clickHandler.bind(null, !checked)}
+      onClick={clickHandler}
     />
   );
 };
 
-export default Checkbox;
+export default memo(Checkbox);

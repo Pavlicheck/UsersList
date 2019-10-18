@@ -1,3 +1,7 @@
+body {
+    background-color: #f0f2f5;
+}
+
 .Header {
     position: sticky;
     top: 0;
@@ -25,5 +29,9 @@
 }
 
 .Selected {
-    background-color: cyan;
+    background-color: #1890ff;
+}
+
+.Empty, .Loader {
+    margin-top: 40px;
 }
