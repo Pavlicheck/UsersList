@@ -24,7 +24,7 @@ export const getUsers = payload => {
 
 export const fetchUsers = () => async dispatch => {
   try {
-    const response = await api.get("/users");
+    const response = await api.get("/users?_limit=100");
     dispatch(setLoading(false));
     dispatch(
       getUsers(response.data.map(user => ({ ...user, selected: false })))

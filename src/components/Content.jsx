@@ -14,8 +14,9 @@ const Content = ({users, loading, getUsers}) => {
 
   return (
     <Layout.Content className="Content">
-      <AntList>
-        {users.map(user => {
+      <AntList
+        dataSource={users}
+        renderItem={user => {
           return (
             <AntList.Item
               key={user.id}
@@ -34,8 +35,7 @@ const Content = ({users, loading, getUsers}) => {
               </Row>
             </AntList.Item>
           );
-        })}
-      </AntList>
+        }}/>
     </Layout.Content>
   );
 };

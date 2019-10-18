@@ -3,7 +3,7 @@ import { Col } from "antd";
 
 function Cell({ children }) {
   return (
-    <Col span={2} className="Col">
+    <Col xxl={2} lg={4} sm={5} xs={6} className="Col">
       {children}
     </Col>
   );
